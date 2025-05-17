@@ -1,5 +1,3 @@
-setwd("/Users/hui/github/us-job-market-analysis")
-
 library(tidyverse)
 library(tidytext)
 library(wordcloud2)

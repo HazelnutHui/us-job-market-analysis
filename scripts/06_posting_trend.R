@@ -1,5 +1,3 @@
-setwd("/Users/hui/github/us-job-market-analysis")
-
 library(tidyverse)
 library(readr)
 library(lubridate)
@@ -16,7 +14,7 @@ if (!"posted_date" %in% colnames(job_data)) {
 job_data <- job_data %>%
   mutate(posted_date = as_date(posted_date))
 
-# Count number of jobs per week (or use floor_date(posted_date, "month") for monthly)
+# Count number of jobs per week
 trend_df <- job_data %>%
   mutate(posting_week = floor_date(posted_date, "week")) %>%
   count(posting_week)
@@ -37,3 +35,4 @@ plot <- ggplot(trend_df, aes(x = posting_week, y = n)) +
 ggsave("visualizations/posting_trend.png", plot, width = 8, height = 5)
 
 cat("Posting trend plot saved to visualizations/posting_trend.png\n")
+
