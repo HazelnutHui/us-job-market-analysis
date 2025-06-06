@@ -41,6 +41,7 @@ This project analyzes over 2,800 LinkedIn job postings for data analyst roles ac
 | Top 10 hiring companies                 | ![](visualizations/top_companies.png)       |
 | Weekly job posting trend                | ![](visualizations/posting_trend.png)       |
 | TF-IDF keywords by company              | ![](visualizations/tfidf_keywords.png)      |
+| wordcloud                               | ![](visualizations/wordcloud.png)           |
 
 ---
 
